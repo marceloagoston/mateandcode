@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{%block content%}
+	<!-- recordar que el contexto me viene por all_posts_list (eso te salva la vida xD) -->
+	{%for post in all_posts_list%}
+<div class="">
+	<h2><a href="{% url 'post_detail' post.pk %}">{{post.title}}</a></h2>
+	<p>{{post.body}}</p>
+	<h5>{{post.author}}</h5>
+</div>
+	{%endfor%}
+{%endblock content%}

@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+header{
+	background: black;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.title{
+	color:white;
+}
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+}
+header {
+border-bottom: 1px solid #999;
+margin-bottom: 2rem;
+display: flex;
+}
+.posts{
+	width: 75%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: auto;
+	justify-content: center;
+}
