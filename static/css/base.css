@@ -35,3 +35,7 @@ a{
 	grid-auto-rows: auto;
 	justify-content: center;
 }
+.edit_p{
+	color: #474747;
+	font-weight: 900;
+}
