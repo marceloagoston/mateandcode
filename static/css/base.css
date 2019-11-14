@@ -3,8 +3,22 @@
 	padding: 0;
 	text-decoration: none;
 }
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+}
 header{
+	border-bottom: 1px solid #999;
+	margin-bottom: 2rem;
 	background: black;
+}
+.subheader{
+	width: 80%;
+	margin: auto;
+	max-width: 1200px;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	align-items: center;
 }
 a{
 	text-decoration: none;
@@ -12,15 +26,6 @@ a{
 }
 .title{
 	color:white;
-}
-body{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 18px;
-}
-header {
-border-bottom: 1px solid #999;
-margin-bottom: 2rem;
-display: flex;
 }
 .posts{
 	width: 75%;
