@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title>Mate&Code</title>
+	<script src="https://kit.fontawesome.com/7156f13c41.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:"rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
 </head>
@@ -10,9 +11,16 @@
 	<header>
 		<div class="subheader">
 			<h1><a href="{% url 'home'%}" class="title">Mate&Code</a></h1>
-			<a href="{% url 'post_new'%}" class="title">+ New Post</a>			
+			<a href="{% url 'post_new'%}" class="title">+ New Post</a>	
+			{% if user.is_authenticated %}
+				<p><i class="far fa-user"></i>Hola, {{ user.username }}!</p>
+				<p><a href="{% url 'logout' %}">Log out</a></p>
+			{% else %}
+				<a href="{% url 'login' %}">Log In</a>
+			{% endif %}		
 		</div>
 	</header>
+	
 	<div class="posts">
 		{%block content%}
 		{%endblock content%}
